@@ -1,11 +1,12 @@
 import React from 'react'
-import Form from './containers/Form'
+import FormBuilder from './components/FormBuilder'
+import data from './cms/formData'
 import './App.css'
 
 function App() {
   return (
     <div className="app">
-      <Form />
+      <FormBuilder data={data} />
     </div>
   )
 }

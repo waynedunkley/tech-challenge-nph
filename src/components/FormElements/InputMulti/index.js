@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Radio = ({ name, label, options, type }) => (
-  <>
+  <div>
     { label && <p>{ label }</p> }
     { options && options.map(option => (
       <div key={option.value}>
@@ -10,7 +10,7 @@ const Radio = ({ name, label, options, type }) => (
         <label htmlFor={option.id}>{ option.label }</label>
       </div>
     )) }
-  </>
+  </div>
 )
 
 Radio.propTypes = {

@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Input = ({ id, name, label, type }) => (
-  <>
+  <div>
     { label && <label htmlFor={id}>{ label }</label> }
     <input type={type} id={id} name={name}></input>
-  </>
+  </div>
 )
 
 Input.propTypes = {
