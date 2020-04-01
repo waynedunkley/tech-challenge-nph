@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Input = ({ id, name, label, type }) => (
-  <div>
-    { label && <label htmlFor={id}>{ label }</label> }
+  <div className='field'>
+    { label && <label htmlFor={id} className='label'>{ label }</label> }
     <input type={type} id={id} name={name}></input>
   </div>
 )

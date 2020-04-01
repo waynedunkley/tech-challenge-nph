@@ -4,7 +4,7 @@ import data from './cms/formData'
 import './App.css'
 
 function App() {
-  const [output, setOutput] = useState({})
+  const [output, setOutput] = useState(null)
   const handleSubmit = (form) => {
     const { elements } = form
     const output = {
@@ -22,8 +22,13 @@ function App() {
     <div className="app">
       <FormBuilder fields={data.fields} onSubmit={handleSubmit} />
       { output && (
-        <div>
-          { Object.keys(output).map(field => output[field]) }
+        <div className='output'>
+          { Object.keys(output).map(field => (
+            <>
+              { output[field] }
+              <br />
+            </>
+          )) }
         </div>
       ) }
     </div>

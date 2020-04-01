@@ -3,3 +3,29 @@
   width: 600px;
   margin: 0 auto;
 }
+
+form {
+  margin-bottom: 30px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+input + label {
+  margin-left: 5px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.output {
+  padding: 15px 10px;
+  background-color: #E8E8E8;
+  border-radius: 5px;
+}
