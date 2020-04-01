@@ -4,13 +4,13 @@ export default {
       id: 'name',
       type: 'text',
       label: 'Name',
-      required: false,
+      required: true,
     },
     {
       id: 'dob',
       type: 'date',
       label: 'Date of Birth',
-      required: false,
+      required: true,
     },
     {
       id: 'gender',
